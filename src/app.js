@@ -46,7 +46,7 @@ let state = null;
 
 function temporizedCard() {
     if (state === null) {
-        state = setInterval(generateCard, 200);
+        state = setInterval(generateCard, 1000);
         document.querySelector(".intervalButton").textContent = "Intervalo ON"  // --------------------- IMPORTANTE QUERY SELECTOR LLAMA LA CLASE (.intervalButton) HACE FALTA EL PUNTOOOOOOO--------------------
     } else {
         clearInterval(state);

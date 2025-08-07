@@ -3,19 +3,21 @@ body {
 }
 
 .mat{
-    height: 500px;
+    padding: 5px;
+    height: auto;
     width: auto;
-    /* background-image: url("assets/greenmat.jpg"); */ 
     display: flex;
 }
 
 .stack{
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
 }
 
 .intervalButton{
     margin: 10px;
+    margin-top: 40px;
     height: 50px;
     width: auto;
     background-color: whitesmoke;
@@ -30,15 +32,32 @@ body {
   cursor: pointer; 
 }
 
+.rangeW{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+}
+
+.rangeH{
+    margin-top: 25px;
+    width: 20px;
+}
+
+.cardContainer{
+    display: flex;
+
+}
+
 .card {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    margin-left: 25px;
+    margin-left: 40px;
+    margin-top: 35px;
     background-color: white;
     width: 150px;
     height: 220px;
     border-radius: 2%;
-    margin-top: 10px;
 }
 
 .cardTopLeft{

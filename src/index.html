@@ -11,23 +11,30 @@
 <body>
     <div class="mat">
         <div class="interval">
-            <button class="intervalButton" onclick="temporizedCard()">Intervalo</button>
-        </div>
-        <div class="range">
-            <input type="range" id="cardWidth" name="cardWidth" min="150" max="800"> Largo
-            <input type="range" id="cardHeight" name="cardHeight" min="100" max="800" style="writing-mode: vertical-lr; direction: rtl">  Alto
+            <button class="intervalButton" onclick="temporizedCard()">Intervalo OFF</button>
         </div>
         <div class="stack">
             <button class="generateCardButton" onclick="generateCard() ">
                 <img src="assets/backsidecard.jpg" alt="backside card" style="width: 150px; height: 220px;">
             </button>
         </div>
-        <div class="card">
-            <div class="cardTopLeft"></div>
-            <div class="cardCenter"></div>
-            <div class="cardBottomRight"></div>
-        </div>
+        <div class="cardContainer">
+            <div class="rangeContainer">
+                <div class="rangeW">
+                   <input type="range" id="cardWidth" name="cardWidth" min="150" max="800" style>
+               </div>
+               <div class="rangeH">
+                   <input type="range" id="cardHeight" name="cardHeight" min="100" max="800" style="writing-mode: vertical-lr; direction: rtl">
+               </div>
+            </div>
+                <div class="card">
+                    <div class="cardTopLeft"></div>
+                    <div class="cardCenter"></div>
+                    <div class="cardBottomRight"></div>
+                </div>
+            </div>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
