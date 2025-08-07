@@ -1,5 +1,72 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-color: darkgreen
+}
 
-body{
-    background: white;
+.mat{
+    height: 500px;
+    width: auto;
+    /* background-image: url("assets/greenmat.jpg"); */ 
+    display: flex;
+}
+
+.stack{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.intervalButton{
+    margin: 10px;
+    height: 50px;
+    width: auto;
+    background-color: whitesmoke;
+    cursor: pointer; 
+}
+
+.generateCardButton {
+  outline: none;
+  background: none;
+  padding: 0;
+  border: none; 
+  cursor: pointer; 
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    background-color: white;
+    width: 150px;
+    height: 220px;
+    border-radius: 2%;
+    margin-top: 10px;
+}
+
+.cardTopLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 60px;
+}
+
+.cardCenter {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+}
+
+.cardBottomRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    font-size: 60px;
+    rotate: 180deg;
 }
